@@ -1,0 +1,15 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - rdkit
+  - gemmi
+  - meeko
+  - molscrub
+  - cctbx-base
+  - pip
+  - pip:
+      - prody
+      - py3Dmol
