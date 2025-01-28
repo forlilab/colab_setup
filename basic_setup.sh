@@ -21,7 +21,6 @@ goestd_repo="https://github.com/phenix-project/geostd.git"
 get_repo "$goestd_repo" "geostd"
 
 log "Step 3: Downloading executables..."
-download_autodock_vina "1.2.5"
 download_autodock_gpu "1.6"
 
 log "Colab environment setup completed successfully!"
