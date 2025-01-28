@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Function to display messages
-source colab_setup/lib/logging.sh
-source colab_setup/lib/download.sh
-source colab_setup/lib/checkout_from_repo.sh
+# Function to display messages, download files, and clone repositories
+source ./lib/logging.sh
+source ./lib/download.sh
+source ./lib/checkout_from_repo.sh
 
 log "Step 1: Installing Python packages using Conda and Pip..."
 yaml_file="colab_setup/basic_colab_env.yaml"
