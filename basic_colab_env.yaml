@@ -5,7 +5,7 @@ dependencies:
   - scipy
   - rdkit
   - gemmi
-  - meeko
+  - meeko==0.6.1
   - cctbx-base
   - pip
   - pip:
