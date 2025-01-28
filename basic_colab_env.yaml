@@ -6,6 +6,7 @@ dependencies:
   - rdkit
   - gemmi
   - meeko==0.6.1
+  - autogrid
   - cctbx-base
   - pip
   - pip:
