@@ -17,12 +17,6 @@ download_and_setup() {
   fi
 }
 
-download_autodock_vina() {
-  local pinned_release=$1
-  local download_url="https://github.com/ccsb-scripps/AutoDock-Vina/releases/download/v$pinned_release/vina_${pinned_release}_linux_x86_64"
-  download_and_setup "AutoDock Vina" "$download_url" "vina_*_linux_x86_64" "vina"
-}
-
 download_autodock_gpu() {
   local pinned_release=$1
   local download_url="https://github.com/ccsb-scripps/AutoDock-GPU/releases/download/v$pinned_release/adgpu-v${pinned_release}_linux_x64_cuda12_128wi"
@@ -30,5 +24,4 @@ download_autodock_gpu() {
 }
 
 export -f download_and_setup
-export -f download_autodock_vina
 export -f download_autodock_gpu
