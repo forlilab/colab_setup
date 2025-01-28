@@ -1,12 +1,13 @@
 #!/bin/bash
 
 # Function to display messages, download files, and clone repositories
-source ./lib/logging.sh
-source ./lib/download.sh
-source ./lib/checkout_from_repo.sh
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "${SCRIPT_DIR}/lib/logging.sh"
+source "${SCRIPT_DIR}/lib/download.sh"
+source "${SCRIPT_DIR}/lib/checkout_from_repo.sh"
 
 log "Step 1: Installing Python packages using Conda and Pip..."
-yaml_file="colab_setup/basic_colab_env.yaml"
+yaml_file="${SCRIPT_DIR}/basic_colab_env.yaml"
 if conda env update --name base --file ${yaml_file} --prune; then
   log "Python packages installed successfully."
 else
