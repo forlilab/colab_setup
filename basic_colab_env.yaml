@@ -11,6 +11,5 @@ dependencies:
   - cctbx-base
   - pip
   - pip:
-      - prody
       - py3Dmol
       - molscrub
