@@ -20,6 +20,11 @@ log "Step 2: Cloning data repositories..."
 goestd_repo="https://github.com/phenix-project/geostd.git"
 get_repo "$goestd_repo" "geostd"
 
+# temporarily check out prody from repo for numpy 2 compatibility
+prody_repo="https://github.com/prody/ProDy.git"
+get_repo "$prody_repo" "prody"
+cd prody; pip install .; cd ..
+
 log "Step 3: Downloading executables..."
 download_autodock_gpu "1.6"
 
